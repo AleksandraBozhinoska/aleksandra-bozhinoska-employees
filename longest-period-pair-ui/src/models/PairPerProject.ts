@@ -1,4 +1,4 @@
-export interface ParsedLine{
+export interface PairPerProject {
     employeeIdFirst: string;
     employeeIdSecond: string;
     projectId: string;

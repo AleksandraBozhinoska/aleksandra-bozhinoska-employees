@@ -4,8 +4,8 @@ import { useState } from 'react';
 import { FilePond } from 'react-filepond'
 import Dropdown, { Option } from 'react-dropdown';
 import { FilePondErrorDescription, FilePondFile } from 'filepond';
-import { ParsedLine } from 'models/pair-per-project';
-import getFileContent from 'services/file-content-service';
+import { PairPerProject } from 'models/PairPerProject';
+import getFileContent from 'services/FileContentService';
 
 import "filepond/dist/filepond.min.css";
 import "./FileUpload.css";
@@ -22,7 +22,7 @@ const FileUpload = (): JSX.Element => {
   ];
 
   const [file, setFile] = useState<FilePondFile>();
-  const [models, setModels] = useState<ParsedLine[]>();
+  const [models, setModels] = useState<PairPerProject[]>();
   const [pattern, setPattern] = useState<string | Option | undefined>(options[0]);
   const [error, setError] = useState<string | undefined>();
 
