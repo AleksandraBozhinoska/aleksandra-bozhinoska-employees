@@ -1,4 +1,4 @@
-* Longest working pair application*
+Longest working pair application
 
 Directory content structure:
 - longest-period-pair directory contains the backend application (Spring Boot)
