@@ -1,0 +1,35 @@
+.content-wrapper {
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.dropdown-wrapper {
+  text-align: left;
+  width: 20%;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.error-wrapper {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  color: #c44e47;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+  
+td, th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+  
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+  
+tr:hover {
+  background-color: #ddd;
+}

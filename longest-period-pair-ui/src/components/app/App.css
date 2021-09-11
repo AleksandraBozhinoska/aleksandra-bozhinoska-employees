@@ -1,0 +1,12 @@
+.app {
+  text-align: center;
+}
+
+.app-header {
+  min-height: 10vh;
+  padding: 1vh;
+  display: block;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  background-color: rgba(63, 67, 70, 0.671);
+}
