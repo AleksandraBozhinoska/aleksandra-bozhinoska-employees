@@ -4,11 +4,11 @@ import { useState } from 'react';
 import { FilePond } from 'react-filepond'
 import Dropdown, { Option } from 'react-dropdown';
 import { FilePondErrorDescription, FilePondFile } from 'filepond';
-import { PairPerProject } from 'models/PairPerProject';
-import getFileContent from 'services/FileContentService';
+import { PairPerProject } from '../../models/PairPerProject';
+import getFileContent from '../../services/FileContentService';
 
-import "filepond/dist/filepond.min.css";
-import "./FileUpload.css";
+import 'filepond/dist/filepond.min.css';
+import './FileUpload.css';
 import 'react-dropdown/style.css';
 
 const FileUpload = (): JSX.Element => {
@@ -85,8 +85,8 @@ const FileUpload = (): JSX.Element => {
   };
 
     return (
-    <div className="content-wrapper">
-      <div className="dropdown-wrapper">
+    <div className='content-wrapper'>
+      <div className='dropdown-wrapper'>
         <label>Select a date formatter:</label>
         <Dropdown 
           options={options} 
@@ -106,12 +106,12 @@ const FileUpload = (): JSX.Element => {
             load: null,
             fetch: null
           }}
-          name="file"
+          name='file'
           labelIdle='Drag & Drop the file to parse with the selected formatter or <span class="filepond--label-action">Browse</span>' 
         >
         </FilePond>
         {file && renderTableData()}
-        {error && <div className="error-wrapper">{error}</div>}
+        {error && <div className='error-wrapper'>{error}</div>}
       </div>
     </div>);
 }

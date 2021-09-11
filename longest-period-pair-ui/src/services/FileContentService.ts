@@ -1,5 +1,5 @@
 import { AxiosResponse } from 'axios';
-import { PairPerProject } from 'models/PairPerProject';
+import { PairPerProject } from '../models/PairPerProject';
 import axios from './CustomAxios';
 
 const getFileContent = (fileName: string): Promise<AxiosResponse<PairPerProject[]>> => {

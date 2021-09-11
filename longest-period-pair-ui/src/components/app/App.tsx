@@ -4,8 +4,8 @@ import './App.css';
 
 const App = (): JSX.Element => {
   return (
-    <div className="app">
-      <header className="app-header">
+    <div className='app'>
+      <header className='app-header'>
         <h5>Welcome to Longest Period Pair App!</h5>
       </header>
       <FileUpload></FileUpload>
