@@ -10,8 +10,8 @@ import java.time.LocalDate;
 public final class DateUtils {
 
     /**
-     * Checks whether two time intervals overlap - (fStart,fEnd) and (sStart,
-     * sEnd).
+     * Checks whether two time intervals overlap - [fStart,fEnd) and [sStart,
+     * sEnd). Assumes that end date is always exclusive.
      *
      * @param fStart the start date of the first interval
      * @param fEnd   the end date of the first interval
@@ -23,7 +23,8 @@ public final class DateUtils {
                                                   LocalDate fEnd,
                                                   LocalDate sStart,
                                                   LocalDate sEnd) {
-        return !(fEnd.isBefore(sStart) || sEnd.isBefore(fStart));
+        return !((fEnd.isBefore(sStart) || fEnd.isEqual(sStart))
+                 || (sEnd.isBefore(fStart) || sEnd.isEqual(fStart)));
     }
 
     /**

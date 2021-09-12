@@ -29,7 +29,7 @@ class DateUtilsTest {
     void shouldNotFindOverlap() {
         var firstStart = LocalDate.of(2020, 4, 15);
         var firstEnd = LocalDate.of(2020, 4, 20);
-        var secondStart = LocalDate.of(2020, 4, 21);
+        var secondStart = LocalDate.of(2020, 4, 20);
         var secondEnd = LocalDate.of(2020, 4, 23);
 
         assertFalse(DateUtils
